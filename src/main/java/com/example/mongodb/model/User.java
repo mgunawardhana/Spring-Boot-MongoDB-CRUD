@@ -1,7 +1,10 @@
 package com.example.mongodb.model;
 
 import jakarta.validation.constraints.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -53,6 +56,11 @@ public class User {
 
     private boolean isActive;
 
+    /**
+     * Returns a string representation of the User object.
+     *
+     * @return a string representation of the User object, including all its fields
+     */
     @Override
     public String toString() {
         return "User{" +
