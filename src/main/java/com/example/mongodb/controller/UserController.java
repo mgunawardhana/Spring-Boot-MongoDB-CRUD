@@ -28,9 +28,10 @@ public class UserController {
     }
 
     @GetMapping("/fetchAll")
-    public List<User> getAllBooks() {
+    public List<User> getAllUsers() {
         return userRepo.findAll();
     }
+
 
     @GetMapping("/fetchBy/{id}")
     public User getBookById(@PathVariable ObjectId id) {
